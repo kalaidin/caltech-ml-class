@@ -14,10 +14,7 @@ class Perceptron:
         self.weights = np.zeros([3])
 
     def response(self, x):
-        """
-        Compute perceptron response.
-        Note the bias component is added (1).
-        """
+        """Compute perceptron response."""
         return classify(np.dot(self.weights, x))
 
     def update_weights(self, x, error):
